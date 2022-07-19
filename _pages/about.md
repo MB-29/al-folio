@@ -19,4 +19,4 @@ social: true  # includes social icons at the bottom of the page
 I am a PhD student at INRIA Paris, [team DYOGENE](https://www.di.ens.fr/dyogene/) and [DI ENS PARIS](https://www.di.ens.fr/).
 I am working under the supervision of [Marc Lelarge](https://www.di.ens.fr/~lelarge/).
 
-You can find more information in [my curriculum]({{ site.url }}/assets/pdf/CV.pdf).
+You can find more information about my curriculum [here](https://www.linkedin.com/in/{{ site.linkedin_username }}).
