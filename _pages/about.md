@@ -6,7 +6,6 @@ description:
 
 profile:
   align: right
-  image: prof_pic.jpg
   address: >
     INRIA Paris
     <p>2 rue Simone Iff, 75012, Paris</p>
