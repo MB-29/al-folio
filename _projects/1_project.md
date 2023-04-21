@@ -15,43 +15,22 @@ header-includes:
 
 ## Exploring an unknown system
 
-In nonlinear dynamical systems, the state $x \in \R^d$ and the input $u \in \R^m$ are governed by an equation of the form
-$$
-        \frac{\mathrm{d} x}{\mathrm{d} t}  = f_\star(x, u),
-$$
-where $f$ is a nonlinear function modeling the dynamics. This function is unknown or partially unknown, and our objective is to learn it from data, with as few samples as possible.
-What is observed in practice is a finite number of discrete, noisy observations of the dynamics:
-$$
-    x_{t+1} = x_t + \mathrm{d} t f(x_t, u_t) + w_t, \quad 0 \leq t \leq T-1,
-$$
-where  $\mathrm{d} t$ is a known time step, $T$ is the number of observations, $x_t \in \R^{d}$ is the state vector, ${w_t \sim \mathcal{N}(0, \sigma^2 I_d)}$ is a normally distributed isotropic noise with known variance $\sigma^2$, and the control variables $u_t \in \R^m$ are chosen by the agent with the constraint ${\Vert u_t \Vert_2 \leq \gamma}$. We assume that $f$ is a differentiable function.
 
-A more general desciption would take the form
-$$x_{t+1} = F_\star(x_t, u_t)$$ 
-$$y_t = G_\star(x_t) + w_t.$$
+In nonlinear dynamical systems, the state $$x \in \mathbb{R}^d$$ and the input $$u \in \mathbb{R}^m$$ are governed by an equation of the form
+\begin{equation}
+        \frac{\ud x}{\ud t}  = f_\star(x, u),
+    \label{eq:controlled_dynamics}
+\end{equation}
+where $$f_\star$$ is a nonlinear function modeling the dynamics. This function is unknown or partially unknown, and our objective is to learn it from data, with as few samples as possible.
+What is observed in practice is a finite number of discrete, noisy observations of the dynamics~\eqref{eq:controlled_dynamics}:
+\begin{equation}
+    \label{eq:dynamics}
+    x_{t+1} = x_t + \mathrm{d}t f_\star(x_t, u_t) + w_t, \quad 0 \leq t \leq T-1,
+\end{equation}
+where  $$\mathrm{d} t$$ is a known time step, $$T$$ is the number of observations, $$x_t \in \mathbb{R}^{d}$$ is the state vector,~$${w_t \sim \mathcal{N}(0, \sigma^2 I_d)}$$ is a normally distributed isotropic noise with known variance~$\sigma^2$, and the control variables~$$u_t \in \mathbb{R}^m$$ are chosen by the agent with the constraint~${\Vert u_t \Vert_2 \leq \gamma}$. We assume that~$f_\star$ is a differentiable function.
 
 
 
 ## Optimal experimental design
 
-# Algorithm 1
-Just a sample algorithmn
-\begin{algorithm}[H]
-\DontPrintSemicolon
-\SetAlgoLined
-\KwResult{Write here the result}
-\SetKwInOut{Input}{Input}\SetKwInOut{Output}{Output}
-\Input{Write here the input}
-\Output{Write here the output}
-\BlankLine
-\While{While condition}{
-    instructions\;
-    \eIf{condition}{
-        instructions1\;
-        instructions2\;
-    }{
-        instructions3\;
-    }
-}
-\caption{While loop with If/Else condition}
-\end{algorithm} 
+
