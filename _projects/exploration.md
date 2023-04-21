@@ -12,6 +12,11 @@ header-includes:
 # Adaptive exploration of physical systems
 
 
+{% include figure.html path="assets/img/exploration/magellan.jpg" title="magellan" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/exploration/map.jpg" title="map" class="img-fluid rounded z-depth-1" %} 
+
+
+{% include figure.html path="assets/img/exploration/map_pendulum.png" title="pendulum map" class="img-fluid rounded z-depth-1" %}
 
 ## Exploring an unknown system
 
