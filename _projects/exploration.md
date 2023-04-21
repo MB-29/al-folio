@@ -18,7 +18,7 @@ header-includes:
 
 In nonlinear dynamical systems, the state $$x \in \mathbb{R}^d$$ and the input $$u \in \mathbb{R}^m$$ are governed by an equation of the form
 \begin{equation}
-        \frac{\mahthrm{d} x}{\mathrm{d} t}  = f_\star(x, u),
+        \frac{\mathrm{d} x}{\mathrm{d} t}  = f_\star(x, u),
     \label{eq:controlled_dynamics}
 \end{equation}
 where $$f_\star$$ is a nonlinear function modeling the dynamics. This function is unknown or partially unknown, and our objective is to learn it from data, with as few samples as possible.
