@@ -29,7 +29,7 @@ What is observed in practice is a finite number of discrete, noisy observations 
 \end{equation}
 where  $$\mathrm{d} t$$ is a known time step, $$T$$ is the number of observations, $$x_t \in \mathbb{R}^{d}$$ is the state vector, $${w_t \sim \mathcal{N}(0, \sigma^2 I_d)}$$ is a normally distributed isotropic noise with known variance $$\sigma^2$$, and the control variables $$u_t \in \mathbb{R}^m$$ are chosen by the agent with the constraint $${\Vert u_t \Vert_2 \leq \gamma}$$. We assume that $$f_\star$$ is a differentiable function.
 
-###Practical considerations
+### Practical considerations
 
 Adaptivity, speed, flexiblity.
 
