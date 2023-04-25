@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Exploration
-description: A fast and efficient search for maximal information 
+description: A fast and efficient search for maximal information.
 img: /assets/img/publication_preview/pendulum.gif
 importance: 1
 category: work
