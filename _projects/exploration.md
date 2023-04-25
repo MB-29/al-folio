@@ -22,7 +22,7 @@ header-includes:
 <div class="caption">
     Brierly, O. W., iscovery of the Straits of Magellan in 1520, and Frederik De Wit’s 1654 Dutch Sea Atlas. Image courtesy of the Harvard Map Collection.
 </div>
-<div class="row">
+<div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/exploration/pendulum_map.png" title="pendulum map" class="img-fluid rounded z-depth-1" %}
     </div>
