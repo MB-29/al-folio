@@ -1,6 +1,6 @@
 ---
 layout: page
-title: exploration
+title: Exploration, or the search for maximal information 
 description: a project with a background image
 img: /assets/img/publication_preview/pendulum.gif
 importance: 1
@@ -10,7 +10,6 @@ header-includes:
 ---
 
 # Adaptive exploration of physical systems
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -31,6 +30,7 @@ header-includes:
 <div class="caption">
     The damped simple pendulum and its phase portrait.
 </div>
+
 ## Exploring an unknown system
 
 
