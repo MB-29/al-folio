@@ -5,6 +5,8 @@ description: A fast and efficient search for maximal information.
 img: /assets/img/publication_preview/pendulum.gif
 importance: 1
 category: work
+header-includes:
+  - \usepackage{algorithm2e}
 ---
 
 
@@ -87,8 +89,16 @@ to $$\theta$$ throughout long time intervals, we want our policy to accommodate 
 should be valid for a broad class of models $$f$$.
 
 
-## Optimal experimental design
+## Information-theoretic view of exploration
 
+We tackle exploration with an information-theoretic point of view, and analyze the choice of inputs through the lense of experimental design. 
+
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/exploration/curvature.pdf" title="curvature" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 ## References
 
