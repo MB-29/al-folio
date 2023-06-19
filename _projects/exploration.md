@@ -5,8 +5,6 @@ description: A fast and efficient search for maximal information.
 img: /assets/img/publication_preview/pendulum.gif
 importance: 1
 category: work
-header-includes:
-  - \usepackage{algorithm2e}
 ---
 
 
@@ -41,7 +39,7 @@ running experiments costs a lot of energy and time. In this regard, active explo
 
 Let us express the problem of exploration of a dynamical system in mathematical terms.
 
-### Controlled dynamical system
+#### Controlled dynamical system
 In dynamical systems, the state $$x \in \mathbb{R}^d$$ and the input $$u \in \mathbb{R}^m$$ are governed by an equation of the form
 \begin{equation}
         \frac{\mathrm{d} x}{\mathrm{d} t}  = f_\star(x, u),
@@ -55,15 +53,26 @@ What is observed in practice is a finite number of discrete, noisy observations 
 \end{equation}
 where  $$\mathrm{d} t$$ is a known time step, $$T$$ is the number of observations, $$x_t \in \mathbb{R}^{d}$$ is the state vector, $${w_t \sim \mathcal{N}(0, \sigma^2 I_d)}$$ is a normally distributed isotropic noise with known variance $$\sigma^2$$, and the control variables $$u_t \in \mathbb{R}^m$$ are chosen by the agent with the constraint $${\Vert u_t \Vert_2 \leq \gamma}$$. We assume that $$f_\star$$ is a differentiable function.
 
-### Sequential decision making problem
 
-For an arbitrary learning model of the dynamics $${f}$$ provided with a learning rule~$$\hat{\theta}$$ and for a fixed number of observations $$T$$, the goal is to find an exploration policy $$\pi$$ for which the learned model is as close to $$f_\star$$ as possible at the end of exploration. Formally, we define the estimation error of parameter $$\theta$$ as
+#### Sequential learning
+
+The dynamics function $$f_\star$$ is learned from past observations with a parametric function $${f}$$, whose parameters are gathered in a vector $$\theta \in \R^n$$. We denote a generic parametric model by a map $${f}(z, \theta)$$.
+At each time $$t$$, the observed trajectory yields an estimate $${\theta_{t}= \hat{\theta}(x_{0:t+1}, u_{0:t})}$$ following a learning rule $$\hat{\theta}$$, such as maximum likelihood. At the end of the exploration, the agent returns a final value $$\theta_T$$. Although this learning problem is rich and of an independent interest, we will adopt simple, bounded-memory, online learning rules and focus in on the following decision making process.
+
+#### Sequential decision making problem
+
+The agent's decision takes the form of a policy $${\pi : (x_{0:t},u_{0:t-1}|\theta_t)\mapsto u_t}$$, mapping the past trajectory to the future input, knowing the current parameter $$\theta_t$$.
+We denote by $$\Pi_\gamma$$ the set of policies satisfying the constraint of amplitude $$\gamma$$.
+The sequential decision making process is summarized in Algorithm \ref{algorithm:exploration} and illustrated in Figure \ref{fig:pendulum_exploration}.
+The goal of active exploration is to choose inputs that make the trajectory as informative as possible for the estimation of $$f_\star$$ with $${f}$$, as stated below.
+
+For an arbitrary learning model of the dynamics $${f}$$ provided with a learning rule $$\hat{\theta}$$ and for a fixed number of observations $$T$$, the goal is to find an exploration policy $$\pi$$ for which the learned model is as close to $$f_\star$$ as possible at the end of exploration. Formally, we define the estimation error of parameter $$\theta$$ as
 
 \begin{equation}
     \label{eq:performance_evaluation}
     \varepsilon(\theta) = \Vert {f}(., \theta) - f_\star \Vert_{L^2},
 \end{equation}
-and look for a policy yielding the best estimate of $$f_\star$$ at time~$T$:
+and look for a policy yielding the best estimate of $$f_\star$$ at time $$T$$:
 \begin{equation}
     \label{eq:exploration_objective}
     \underset{\pi \in \Pi_\gamma}{\min} \quad \mathbb{E} [\varepsilon(\theta_T) | \pi],
@@ -71,13 +80,11 @@ and look for a policy yielding the best estimate of $$f_\star$$ at time~$T$:
 
 where the expectation is taken over the stochastic dynamics \eqref{eq:controlled_dynamics} and possibly the randomness induced by the policy.
 
-### Practical constraints
-In addition to the sample efficiency objective (2.4) , we attach great importance to the
-three following practical points. *Adaptivity*: as opposed to episodic
+#### Practical constraints
+In addition to the sample efficiency objective \eqref{eq:exploration_objective}, an exploration algorithm should satisfy the following practical requirements imposed by real-life applications. *Adaptivity*: as opposed to episodic
 planning for which $$\pi(.|θ)$$ remains constant with respect
 to $$\theta$$ throughout long time intervals, we want our policy to accommodate to new observations at each time step. *Computational efficiency*: evaluating the policy $$\pi$$ should require limited computational resources. *Flexibility*: our policy
 should be valid for a broad class of models $$f$$.
-
 
 
 ## Optimal experimental design
