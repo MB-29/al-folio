@@ -10,7 +10,7 @@ header-includes:
 ---
 
 
-A sailor wants to explore the world aboard his boat. How should he choose his course in order to map the world as quickly as possible, based on what he observes along the way? This question sums up the problem of exploration, which arises in a similar way in the learning of physical systems, where the aim is to learn the dynamics of the system with as few experiments as possible. In this post, we will describe this problem using information theory and experimental design, and then present our results on system identification and exploration in reinforcement learning [1, 2].
+A sailor wants to explore the world aboard his boat. How should he choose his course in order to map the world as quickly as possible, based on what he observes along the way? This question sums up the problem of exploration [1], which arises in a similar way in the learning of physical systems, where the aim is to learn the dynamics of the system with as few experiments as possible. In this post, we will describe this problem using information theory and experimental design, and then present our results on system identification and exploration in reinforcement learning [2, 3].
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -25,7 +25,7 @@ A sailor wants to explore the world aboard his boat. How should he choose his co
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/exploration/pendulum_map.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/exploration/pendulum_map.png" title="pendulum_map" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -42,7 +42,7 @@ running experiments costs a lot of energy and time. In this regard, active explo
 Let us express the problem of exploration of a dynamical system in mathematical terms.
 
 #### Controlled dynamical system
-In dynamical systems, the state $$x \in \mathbb{R}^d$$ and the input $$u \in \mathbb{R}^m$$ are governed by an equation of the form
+In dynamical systems, the state $$x$$ and the input $$u$$ are governed by an equation of the form
 \begin{equation}
         \frac{\mathrm{d} x}{\mathrm{d} t}  = f_\star(x, u),
     \label{eq:controlled_dynamics}
@@ -58,14 +58,12 @@ where  $$\mathrm{d} t$$ is a known time step, $$T$$ is the number of observation
 
 #### Sequential learning
 
-The dynamics function $$f_\star$$ is learned from past observations with a parametric function $${f}$$, whose parameters are gathered in a vector $$\theta \in \R^n$$. We denote a generic parametric model by a map $${f}(z, \theta)$$.
+The dynamics function $$f_\star$$ is learned from past observations with a parametric function $${f}$$, whose parameters are gathered in a vector $$\theta \in \mathrm{R}^n$$. We denote a generic parametric model by a map $${f}(z, \theta)$$.
 At each time $$t$$, the observed trajectory yields an estimate $${\theta_{t}= \hat{\theta}(x_{0:t+1}, u_{0:t})}$$ following a learning rule $$\hat{\theta}$$, such as maximum likelihood. At the end of the exploration, the agent returns a final value $$\theta_T$$. Although this learning problem is rich and of an independent interest, we will adopt simple, bounded-memory, online learning rules and focus in on the following decision making process.
 
 #### Sequential decision making problem
 
 The agent's decision takes the form of a policy $${\pi : (x_{0:t},u_{0:t-1}|\theta_t)\mapsto u_t}$$, mapping the past trajectory to the future input, knowing the current parameter $$\theta_t$$.
-We denote by $$\Pi_\gamma$$ the set of policies satisfying the constraint of amplitude $$\gamma$$.
-The sequential decision making process is summarized in Algorithm \ref{algorithm:exploration} and illustrated in Figure \ref{fig:pendulum_exploration}.
 The goal of active exploration is to choose inputs that make the trajectory as informative as possible for the estimation of $$f_\star$$ with $${f}$$, as stated below.
 
 For an arbitrary learning model of the dynamics $${f}$$ provided with a learning rule $$\hat{\theta}$$ and for a fixed number of observations $$T$$, the goal is to find an exploration policy $$\pi$$ for which the learned model is as close to $$f_\star$$ as possible at the end of exploration. Formally, we define the estimation error of parameter $$\theta$$ as
@@ -94,15 +92,29 @@ should be valid for a broad class of models $$f$$.
 We tackle exploration with an information-theoretic point of view, and analyze the choice of inputs through the lense of experimental design. 
 
 
+$y_t = f_\star(z_t) + w_t, \quad 0 \leq t \leq T-1$$.
+design variables $z_t \in \mathcal{Z}_t$, noise  $w_t \underset{\text{i.i.d}}{\sim} \mathcal{N}(0, \sigma^2)$, likelihood $ \ell(y, \theta)  = -\frac{1}{2\sigma^2} \sum\limits_{t=0}^{T-1}
+    \left( f(z_t, \theta) -  y_{t}  \right)^2$ yielding an estimate $\displaystyle \hat{\theta} \in {\mathrm{argmax}}_\theta \; \ell(\theta)$. 
+
+*How to choose $z$ for an optimal estimation ?*
+
+The **Fisher information** measures the curvature of the likelihood:
+  
+  $\displaystyle I(y, \theta) := -\frac{\partial^2 \ell}{\partial \theta^2} (y, {\theta}) \in \mathrm{R}^{n \times n}$.
+
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/exploration/curvature.pdf" title="curvature" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/exploration/curvature.png" title="curvature" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 ## References
 
-[1] M. Blanke and M. Lelarge, "Online greedy identification of linear dynamical systems," 2022 IEEE 61st Conference on Decision and Control (CDC), Cancun, Mexico, 2022, pp. 5363-5368, doi: 10.1109/CDC51059.2022.9993030.
+[1] de la Fuente, José Manuel Núñez, and Fernão de Magalhães. Diario de Magallanes: el hombre que lo vio y anduvo todo. Ediciones Doce Calles, 2017.
 
-[2] M. Blanke and M. Lelarge, "FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems," International Conference on Machine Learning (ICML), Hawaii 2023.
+[2] M. Blanke and M. Lelarge, "Online greedy identification of linear dynamical systems," 2022 IEEE 61st Conference on Decision and Control (CDC), Cancun, Mexico, 2022, pp. 5363-5368, doi: 10.1109/CDC51059.2022.9993030.
 
+[3] M. Blanke and M. Lelarge, "FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems," International Conference on Machine Learning (ICML), Hawaii 2023.
+
+[4] Russ Tedrake. Underactuated Robotics: Algorithms for Walking, Running, Swimming, Flying, and Manipulation (Course Notes for MIT 6.832). Downloaded from https://underactuated.csail.mit.edu/
