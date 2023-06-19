@@ -9,7 +9,8 @@ header-includes:
   - \usepackage{algorithm2e}
 ---
 
-# Adaptive exploration of physical systems
+
+A sailor wants to explore the world aboard his boat. How should he choose his course in order to map the world as quickly as possible, based on what he observes along the way? This question sums up the problem of exploration, which arises in a similar way in the learning of physical systems, where the aim is to learn the dynamics of the system with as few experiments as possible. In this post, we will describe this problem using information theory and experimental design, and then present our results on system identification and exploration in reinforcement learning [1, 2].
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -28,18 +29,25 @@ header-includes:
     </div>
 </div>
 <div class="caption">
-    The damped simple pendulum and its phase portrait.
+    The damped simple pendulum and its phase portrait. In our analogy, the ship is the pendulum, the captain is the reinforcement learning agent, the world to map is the pendulum's phase portrait and the rudder is the torque applied to the ship.
 </div>
 
-## Exploring an unknown system
+Exploration is a central question in reinforcement learning, as the agent needs to learn about the environment before solving a control task. Even though prior theoretical knowledge might provide a model of the system, the model must always be adjusted with experimental data to be as faithful to reality as possible. Collecting observations to fit an accurate model
+of the system can be costly:  consider for example an aircraft system, for which
+running experiments costs a lot of energy and time. In this regard, active exploration (or system identification) aims at exciting the system in order to collect informative data and learn the system globally in a sample-efficient manner, prior to any control task.
 
 
-In nonlinear dynamical systems, the state $$x \in \mathbb{R}^d$$ and the input $$u \in \mathbb{R}^m$$ are governed by an equation of the form
+## Exploring an unknown environment
+
+Let us express the problem of exploration of a dynamical system in mathematical terms.
+
+### Controlled dynamical system
+In dynamical systems, the state $$x \in \mathbb{R}^d$$ and the input $$u \in \mathbb{R}^m$$ are governed by an equation of the form
 \begin{equation}
         \frac{\mathrm{d} x}{\mathrm{d} t}  = f_\star(x, u),
     \label{eq:controlled_dynamics}
 \end{equation}
-where $$f_\star$$ is a nonlinear function modeling the dynamics. This function is unknown or partially unknown, and our objective is to learn it from data, with as few samples as possible.
+where $$f_\star$$ is a function modeling the dynamics. This function is unknown or partially unknown, and our objective is to learn it from data, with as few samples as possible.
 What is observed in practice is a finite number of discrete, noisy observations of the dynamics \eqref{eq:controlled_dynamics}:
 \begin{equation}
     \label{eq:dynamics}
@@ -47,11 +55,37 @@ What is observed in practice is a finite number of discrete, noisy observations 
 \end{equation}
 where  $$\mathrm{d} t$$ is a known time step, $$T$$ is the number of observations, $$x_t \in \mathbb{R}^{d}$$ is the state vector, $${w_t \sim \mathcal{N}(0, \sigma^2 I_d)}$$ is a normally distributed isotropic noise with known variance $$\sigma^2$$, and the control variables $$u_t \in \mathbb{R}^m$$ are chosen by the agent with the constraint $${\Vert u_t \Vert_2 \leq \gamma}$$. We assume that $$f_\star$$ is a differentiable function.
 
-### Practical considerations
+### Sequential decision making problem
 
-Adaptivity, speed, flexiblity.
+For an arbitrary learning model of the dynamics $${f}$$ provided with a learning rule~$$\hat{\theta}$$ and for a fixed number of observations $$T$$, the goal is to find an exploration policy $$\pi$$ for which the learned model is as close to $$f_\star$$ as possible at the end of exploration. Formally, we define the estimation error of parameter $$\theta$$ as
+
+\begin{equation}
+    \label{eq:performance_evaluation}
+    \varepsilon(\theta) = \Vert {f}(., \theta) - f_\star \Vert_{L^2},
+\end{equation}
+and look for a policy yielding the best estimate of $$f_\star$$ at time~$T$:
+\begin{equation}
+    \label{eq:exploration_objective}
+    \underset{\pi \in \Pi_\gamma}{\min} \quad \mathbb{E} [\varepsilon(\theta_T) | \pi],
+\end{equation}
+
+where the expectation is taken over the stochastic dynamics \eqref{eq:controlled_dynamics} and possibly the randomness induced by the policy.
+
+### Practical constraints
+In addition to the sample efficiency objective (2.4) , we attach great importance to the
+three following practical points. *Adaptivity*: as opposed to episodic
+planning for which $$\pi(.|θ)$$ remains constant with respect
+to $$\theta$$ throughout long time intervals, we want our policy to accommodate to new observations at each time step. *Computational efficiency*: evaluating the policy $$\pi$$ should require limited computational resources. *Flexibility*: our policy
+should be valid for a broad class of models $$f$$.
+
 
 
 ## Optimal experimental design
 
+
+## References
+
+[1] M. Blanke and M. Lelarge, "Online greedy identification of linear dynamical systems," 2022 IEEE 61st Conference on Decision and Control (CDC), Cancun, Mexico, 2022, pp. 5363-5368, doi: 10.1109/CDC51059.2022.9993030.
+
+[2] M. Blanke and M. Lelarge, "FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems," International Conference on Machine Learning (ICML), Hawaii 2023.
 
