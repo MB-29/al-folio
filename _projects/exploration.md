@@ -16,17 +16,21 @@ category: work
 <!-- </div> -->
 
   <h4 style="text-align: center">
-  Online greedy identification of linear dynamical systems, 
-  <p> in  <a href="https://cdc2022.ieeecss.org/"> CDC2022</a> |
-  <a href="https://arxiv.org/abs/2204.06375"> [Paper]</a> |
-  <a href="https://github.com/MB-29/greedy-identification"> [Code]</a> |
-  </p></h4>
+  Online greedy identification of linear dynamical systems 
+  </h4>
   <h4 style="text-align: center">
-  FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems, 
-  <p> in  <a href="https://icml.cc/Conferences/2023"> ICML2023</a> |
+  in  <a href="https://cdc2022.ieeecss.org/"> CDC2022</a> |
+  <a href="https://arxiv.org/abs/2204.06375"> [Paper]</a> |
+  <a href="https://github.com/MB-29/greedy-identification"> [Code]</a> 
+  </h4>
+  <h4 style="text-align: center">
+  FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems
+  </h4>
+  <h4 style="text-align: center">
+  in  <a href="https://icml.cc/Conferences/2023"> ICML2023</a> |
   <a href="https://arxiv.org/abs/2304.13426"> [Paper]</a> |
-  <a href="https://github.com/MB-29/exploration"> [Code]</a> |
-  </p></h4>
+  <a href="https://github.com/MB-29/exploration"> [Code]</a> 
+  </h4>
   <h4 style="text-align: center">
   <a href="https://mb-29.github.io/"> Matthieu Blanke</a> |
   <a href="https://www.di.ens.fr/~lelarge/"> Marc Lelarge</a> 
