@@ -5,12 +5,17 @@ description: A fast and efficient search for maximal information.
 img: /assets/img/publication_preview/pendulum.gif
 importance: 1
 category: work
-header-includes:
-  - \usepackage{algorithm2e}
 ---
+<div style="text-align: center">
 
+[Matthieu Blanke](https://mb-29.github.io/), [Marc Lelarge](https://www.di.ens.fr/~lelarge/)
 
-A sailor wants to explore the world aboard his boat. How should he choose his course in order to map the world as quickly as possible, based on what he observes along the way? This question sums up the problem of exploration [1], which arises in a similar way in the learning of physical systems, where the aim is to learn the dynamics of the system with as few experiments as possible. In this post, we will describe this problem using information theory and experimental design, and then present our results on system identification and exploration in reinforcement learning [2, 3].
+Online greedy identification of linear dynamical systems, in [CDC2022](https://cdc2022.ieeecss.org/) | [[Paper]](https://arxiv.org/abs/2204.06375) | [[Code]](https://github.com/MB-29/greedy-identification) 
+
+FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems, in [ICML2023](https://icml.cc/Conferences/2023) | [[Paper]](https://arxiv.org/abs/2304.13426) | [[Code]](https://github.com/MB-29/exploration) 
+
+</div>
+
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -32,13 +37,15 @@ A sailor wants to explore the world aboard his boat. How should he choose his co
     The damped simple pendulum and its phase portrait. In our analogy, the ship is the pendulum, the captain is the reinforcement learning agent, the world to map is the pendulum's phase portrait and the rudder is the torque applied to the ship.
 </div>
 
-Exploration is a central question in reinforcement learning, as the agent needs to learn about the environment before solving a control task. Even though prior theoretical knowledge might provide a model of the system, the model must always be adjusted with experimental data to be as faithful to reality as possible. Collecting observations to fit an accurate model
-of the system can be costly:  consider for example an aircraft system, for which
-running experiments costs a lot of energy and time. In this regard, active exploration (or system identification) aims at exciting the system in order to collect informative data and learn the system globally in a sample-efficient manner, prior to any control task.
+A sailor wants to explore the world aboard his boat. How should he choose his course in order to map the world as quickly as possible, based on what he observes along the way? This question sums up the problem of exploration [1], which arises in a similar way in the learning of physical systems, where the aim is to learn the dynamics of the system with as few experiments as possible. In this post, we will describe this problem using information theory and experimental design, and then present our results on system identification and exploration in reinforcement learning [2, 3].
+
+
 
 
 ## Exploring an unknown environment
-
+Exploration is a central question in reinforcement learning, as the agent needs to learn about the environment before solving a control task. Even though prior theoretical knowledge might provide a model of the system, the model must always be adjusted with experimental data to be as faithful to reality as possible. Collecting observations to fit an accurate model
+of the system can be costly:  consider for example an aircraft system, for which
+running experiments costs a lot of energy and time. In this regard, active exploration (or system identification) aims at exciting the system in order to collect informative data and learn the system globally in a sample-efficient manner, prior to any control task.
 Let us express the problem of exploration of a dynamical system in mathematical terms.
 
 #### Controlled dynamical system
