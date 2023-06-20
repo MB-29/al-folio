@@ -6,7 +6,7 @@ img: /assets/img/publication_preview/pendulum.gif
 importance: 1
 category: work
 ---
-<div style="text-align: center">
+<p style="text-align: center;">
 
 [Matthieu Blanke](https://mb-29.github.io/), [Marc Lelarge](https://www.di.ens.fr/~lelarge/)
 
@@ -14,7 +14,8 @@ Online greedy identification of linear dynamical systems, in [CDC2022](https://c
 
 FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems, in [ICML2023](https://icml.cc/Conferences/2023) | [[Paper]](https://arxiv.org/abs/2304.13426) | [[Code]](https://github.com/MB-29/exploration) 
 
-</div>
+</p>
+
 
 
 <div class="row">
@@ -99,15 +100,15 @@ should be valid for a broad class of models $$f$$.
 We tackle exploration with an information-theoretic point of view, and analyze the choice of inputs through the lense of experimental design. 
 
 
-$y_t = f_\star(z_t) + w_t, \quad 0 \leq t \leq T-1$$.
-design variables $z_t \in \mathcal{Z}_t$, noise  $w_t \underset{\text{i.i.d}}{\sim} \mathcal{N}(0, \sigma^2)$, likelihood $ \ell(y, \theta)  = -\frac{1}{2\sigma^2} \sum\limits_{t=0}^{T-1}
-    \left( f(z_t, \theta) -  y_{t}  \right)^2$ yielding an estimate $\displaystyle \hat{\theta} \in {\mathrm{argmax}}_\theta \; \ell(\theta)$. 
+$$y_t = f_\star(z_t) + w_t, \quad 0 \leq t \leq T-1$$.
+design variables $$z_t \in \mathcal{Z}_t$$, noise  $$w_t \underset{\text{i.i.d}}{\sim} \mathcal{N}(0, \sigma^2)$$, likelihood $$ \ell(y, \theta)  = -\frac{1}{2\sigma^2} \sum\limits_{t=0}^{T-1}
+    \left( f(z_t, \theta) -  y_{t}  \right)^2$$ yielding an estimate $$\displaystyle \hat{\theta} \in {\mathrm{argmax}}_\theta \; \ell(\theta)$$. 
 
-*How to choose $z$ for an optimal estimation ?*
+*How to choose $$z$$ for an optimal estimation ?*
 
 The **Fisher information** measures the curvature of the likelihood:
   
-  $\displaystyle I(y, \theta) := -\frac{\partial^2 \ell}{\partial \theta^2} (y, {\theta}) \in \mathrm{R}^{n \times n}$.
+  $$\displaystyle I(y, \theta) := -\frac{\partial^2 \ell}{\partial \theta^2} (y, {\theta}) \in \mathrm{R}^{n \times n}$$.
 
 
 <div class="row">
