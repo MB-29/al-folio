@@ -15,10 +15,12 @@ category: work
 #### [Matthieu Blanke](https://mb-29.github.io/), [Marc Lelarge](https://www.di.ens.fr/~lelarge/)
 <!-- </div> -->
 
-<div style="text-align:center">    
-  <a href="http//www.google.com">Search</a>
-  <!-- more links here -->
-</div>
+  <h4 style="text-align: center">
+  Online greedy identification of linear dynamical systems, 
+  in  <a href="https://cdc2022.ieeecss.org/"> [CDC2022]</span></a> |
+  in  <a href="https://arxiv.org/abs/2204.06375"> [PAPER]</span></a> |
+  in  <a href="https://github.com/MB-29/greedy-identification"> [CODE]</span></a> |
+  </h4>
 
 
 
