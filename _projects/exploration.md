@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Exploration
-description: A fast and efficient search for maximal information.
+title: Exploration, or the search for maximal information.
+description: Based on the two following papers.
 img: /assets/img/publication_preview/pendulum.gif
 importance: 1
 category: work
@@ -21,7 +21,11 @@ category: work
   Online greedy identification of linear dynamical systems 
   </h4>
   <h5 style="text-align: center">
-  in  <a href="https://cdc2022.ieeecss.org/"> CDC2022</a> |
+  in  
+  <!-- <a href="https://cdc2022.ieeecss.org/">  -->
+  CDC2022
+  <!-- </a>  -->
+  |
   <a href="https://arxiv.org/abs/2204.06375"> [Paper]</a> |
   <a href="https://github.com/MB-29/greedy-identification"> [Code]</a> 
   </h5>
@@ -32,21 +36,27 @@ category: work
   FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems
   </h4>
   <h5 style="text-align: center">
-  in  <a href="https://icml.cc/Conferences/2023"> ICML2023</a> |
+  in
+  <!-- <a href="https://icml.cc/Conferences/2023"> -->
+  ICML2023
+  <!-- </a> -->
+   |
   <a href="https://arxiv.org/abs/2304.13426"> [Paper]</a> |
   <a href="https://github.com/MB-29/exploration"> [Code]</a> 
   </h5>
 
----
+<!-- --- -->
 
-  <h5 style="text-align: center">
+  <!-- <h5 style="text-align: center">
   <a href="https://mb-29.github.io/"> Matthieu Blanke</a> |
   <a href="https://www.di.ens.fr/~lelarge/"> Marc Lelarge</a> 
-  </h5>
+  </h5> -->
+
+<br/><br/>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/exploration/random_flex.gif" title="flex_vs_random" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/exploration/random_flex.gif" title="flex_vs_random" class="img-fluid rounded" %}
     </div>
 </div>
 <!-- --- -->
@@ -69,7 +79,7 @@ A sailor wants to explore the world aboard his boat. How should he choose his co
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/exploration/pendulum_map.png" title="pendulum_map" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/exploration/pendulum_map.png" title="pendulum_map" class="img-fluid rounded " %}
     </div>
 </div>
 <div class="caption">
