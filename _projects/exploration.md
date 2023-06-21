@@ -15,6 +15,8 @@ category: work
 #### [Matthieu Blanke](https://mb-29.github.io/), [Marc Lelarge](https://www.di.ens.fr/~lelarge/) -->
 <!-- </div> -->
 
+<!-- --- -->
+
   <h4 style="text-align: center">
   Online greedy identification of linear dynamical systems 
   </h4>
@@ -23,6 +25,9 @@ category: work
   <a href="https://arxiv.org/abs/2204.06375"> [Paper]</a> |
   <a href="https://github.com/MB-29/greedy-identification"> [Code]</a> 
   </h5>
+
+  ---
+
   <h4 style="text-align: center">
   FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems
   </h4>
@@ -31,10 +36,17 @@ category: work
   <a href="https://arxiv.org/abs/2304.13426"> [Paper]</a> |
   <a href="https://github.com/MB-29/exploration"> [Code]</a> 
   </h5>
-  <h4 style="text-align: center">
+
+---
+
+  <h5 style="text-align: center">
   <a href="https://mb-29.github.io/"> Matthieu Blanke</a> |
   <a href="https://www.di.ens.fr/~lelarge/"> Marc Lelarge</a> 
-  </h4>
+  </h5>
+
+<!-- --- -->
+
+<br/><br/>
 
 
 
