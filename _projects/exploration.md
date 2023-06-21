@@ -44,10 +44,16 @@ category: work
   <a href="https://www.di.ens.fr/~lelarge/"> Marc Lelarge</a> 
   </h5>
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/exploration/random_flex.gif" title="flex_vs_random" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 <!-- --- -->
 
 <br/><br/>
 
+A sailor wants to explore the world aboard his boat. How should he choose his course in order to map the world as quickly as possible, based on what he observes along the way? This question sums up the problem of exploration [1], which arises in a similar way in the learning of physical systems, where the aim is to learn the dynamics of the system with as few experiments as possible. In this post, we will describe this problem using information theory and experimental design, and then present our results on system identification and exploration in reinforcement learning [2, 3].
 
 
 <div class="row">
@@ -70,7 +76,6 @@ category: work
     The damped simple pendulum and its phase portrait. In our analogy, the ship is the pendulum, the captain is the reinforcement learning agent, the world to map is the pendulum's phase portrait and the rudder is the torque applied to the ship.
 </div>
 
-A sailor wants to explore the world aboard his boat. How should he choose his course in order to map the world as quickly as possible, based on what he observes along the way? This question sums up the problem of exploration [1], which arises in a similar way in the learning of physical systems, where the aim is to learn the dynamics of the system with as few experiments as possible. In this post, we will describe this problem using information theory and experimental design, and then present our results on system identification and exploration in reinforcement learning [2, 3].
 
 
 
