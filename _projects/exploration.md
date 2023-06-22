@@ -2,7 +2,7 @@
 layout: page
 title: Exploration, or the search for maximal information.
 description: Based on the two following papers.
-img: /assets/img/publication_preview/pendulum.gif
+img: /assets/img/publication_preview/pendulum_portrait.gif
 importance: 1
 category: work
 ---
