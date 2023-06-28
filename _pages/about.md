@@ -8,8 +8,8 @@ profile:
   align: right
   image: photo.jpg
   address: >
-    INRIA Paris
-    <p>2 rue Simone Iff, 75012, Paris</p>
+    <p>Inria Paris </p>
+    <p>2 rue Simone Iff 75012 Paris</p>
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
