@@ -52,10 +52,9 @@ category: work
   <a href="https://www.di.ens.fr/~lelarge/"> Marc Lelarge</a> 
   </h5> -->
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-      {% include video.html path="assets/video/flex_demo.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include figure.html path="assets/img/exploration/random_flex.gif" title="flex_vs_random" class="img-fluid rounded" %}
     </div>
 </div>
 
@@ -83,16 +82,7 @@ A sailor wants to explore the world aboard his boat. How should he choose his co
 </div>
 
 
-<br/><br/>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/exploration/random_flex.gif" title="flex_vs_random" class="img-fluid rounded" %}
-    </div>
-</div>
-
-
-<br/><br/>
 
 
 ## Exploring an unknown environment
