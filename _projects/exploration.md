@@ -42,7 +42,8 @@ category: work
   <!-- </a> -->
    |
   <a href="https://arxiv.org/abs/2304.13426"> [Paper]</a> |
-  <a href="https://github.com/MB-29/exploration"> [Code]</a> 
+  <a href="https://github.com/MB-29/exploration"> [Code]</a> |
+  <a href="https://www.youtube.com/watch?v=hGpkdz8-8vU"> [Demo]</a>   
   </h5>
 
 <!-- --- -->
