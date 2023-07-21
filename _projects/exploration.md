@@ -119,9 +119,22 @@ A sailor wants to explore the world aboard his boat. How should he choose his co
 </div>
 
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/exploration/pendulum.gif" title="pendulum" class="img-fluid rounded" %}
+    </div>
+</div>
 
-
-
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/exploration/cartpole.gif" title="cartpole" class="img-fluid rounded" %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/exploration/quadrotor.gif" title="quadrotor" class="img-fluid rounded" %}
+    </div>
+</div>
 ## Exploring an unknown environment
 Exploration is a central question in reinforcement learning, as the agent needs to learn about the environment before solving a control task. Even though prior theoretical knowledge might provide a model of the system, the model must always be adjusted with experimental data to be as faithful to reality as possible. Collecting observations to fit an accurate model
 of the system can be costly:  consider for example an aircraft system, for which
