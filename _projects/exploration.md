@@ -23,9 +23,9 @@ category: work
   <h5 style="text-align: center">
   Matthieu Blanke, Marc Lelarge
   </h5>
-  <h5 style="text-align: center">
+  <h6 style="text-align: center">
   Inria Paris, DI ENS, PSL Research University
-  </h5>
+  </h6>
   <h5 style="text-align: center">
   in  
   CDC2022
