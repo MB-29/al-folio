@@ -58,7 +58,7 @@ category: work
   </h5>
    -->
   <h5 style="text-align: center">
-  In ICML 2023
+  In ICML 2023 | 
   <!-- paper -->
   <a href="https://arxiv.org/abs/2304.13426"
    class="external-link button is-normal is-rounded is-dark">
