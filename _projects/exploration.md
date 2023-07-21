@@ -42,6 +42,10 @@ category: work
   <h5 style="text-align: center">
   Matthieu Blanke, Marc Lelarge
   </h5>
+  </h5>
+  <h5 style="text-align: center">
+  Inria Paris, DI ENS, PSL Research University
+  </h5>
   <h5 style="text-align: center">
   in
   <!-- <a href="https://icml.cc/Conferences/2023"> -->
