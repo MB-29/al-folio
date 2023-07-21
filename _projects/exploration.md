@@ -136,7 +136,7 @@ Let us express the problem of exploration of a dynamical system in mathematical 
     <pre><code>@article{blanke2023flex,
   title={FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems},
   author={Blanke, Matthieu and Lelarge, Marc},
-  journal={Internationall Conference on Machine Learning, 2023},
+  journal={International Conference on Machine Learning, 2023},
   year={2023}
 }
 </code></pre>
