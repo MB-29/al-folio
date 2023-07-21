@@ -2,7 +2,7 @@
 layout: page
 title: Adaptive exploration of physical systems
 description: A lightweight information maximization policy.
-img: /assets/img/publication_preview/pendulum_trajectory.gif
+img: /assets/img/exploration/pendulum_trajectory.gif
 importance: 1
 category: work
 ---
