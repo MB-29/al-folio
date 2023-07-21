@@ -35,16 +35,16 @@ category: work
   </h5>
   <h5 style="text-align: center">
   in
-  <!-- <a href="https://icml.cc/Conferences/2023"> -->
   ICML2023
-  <!-- </a> -->
    |
   <a href="https://arxiv.org/abs/2304.13426"> [Paper]</a> |
   <a href="https://github.com/MB-29/exploration"> [Code]</a> |
   <a href="https://www.youtube.com/watch?v=hGpkdz8-8vU"> [Demo]</a>   
   </h5>
   ---
+  
 -->
+
   <h4 style="text-align: center">
   FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems
   </h4>
