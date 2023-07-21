@@ -55,6 +55,15 @@ category: work
   <a href="https://github.com/MB-29/exploration"> [Code]</a> |
   <a href="https://www.youtube.com/watch?v=hGpkdz8-8vU"> [Demo]</a>   
   </h5>
+  <h5 style="text-align: center">
+  <a href="https://github.com/MB-29/exploration"
+   class="external-link button is-normal is-rounded is-dark">
+  <span class="icon">
+      <i class="fab fa-github"></i>
+  </span>
+  <span>Code</span>
+  </a>
+  </h5>
 
 <!-- --- -->
 
