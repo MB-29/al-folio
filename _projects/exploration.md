@@ -58,10 +58,7 @@ category: work
   <h5 style="text-align: center">
   <a href="https://github.com/MB-29/exploration"
    class="external-link button is-normal is-rounded is-dark">
-  <span class="icon">
-      <i class="fab fa-github"></i>
-  </span>
-  <span>Code</span>
+  Code
   </a>
   </h5>
 
