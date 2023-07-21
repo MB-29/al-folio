@@ -58,7 +58,7 @@ category: work
   in ICML 2023 | 
   <!-- paper -->
   <a href="https://arxiv.org/abs/2304.13426"
-   class="external-link button is-normal is-rounded is-dark">
+   class="external-link dark-button">
   <span class="icon">
   <i class="ai ai-arxiv"></i>
   </span>
