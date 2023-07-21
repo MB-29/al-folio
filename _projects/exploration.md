@@ -64,6 +64,7 @@ category: work
   </span>
   <span> Paper </span>
   </a>
+     | 
   <!-- code -->
   <a href="https://github.com/MB-29/exploration"
    class="external-link dark-button is-normal is-rounded is-dark">
@@ -72,6 +73,7 @@ category: work
   </span>
   <span> Code </span>
   </a>
+     | 
   <!-- demo -->
   <a href="https://www.youtube.com/watch?v=hGpkdz8-8vU"
    class="external-link dark-button is-normal is-rounded is-dark">
