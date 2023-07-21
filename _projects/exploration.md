@@ -55,7 +55,7 @@ category: work
   Inria Paris, DI ENS, PSL Research University
   </h6>   
   <h5 style="text-align: center">
-  in ICML 2023
+  in ICML 2023 | 
   <!-- paper -->
   <a href="https://arxiv.org/abs/2304.13426"
    class="external-link dark-button">
