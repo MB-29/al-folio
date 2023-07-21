@@ -55,7 +55,7 @@ category: work
   Inria Paris, DI ENS, PSL Research University
   </h6>   
   <h5 style="text-align: center">
-  in ICML 2023 | 
+  in ICML 2023
   <!-- paper -->
   <a href="https://arxiv.org/abs/2304.13426"
    class="external-link dark-button">
@@ -64,7 +64,6 @@ category: work
   </span>
   <span> Paper </span>
   </a>
-     | 
   <!-- code -->
   <a href="https://github.com/MB-29/exploration"
    class="external-link dark-button">
@@ -73,7 +72,6 @@ category: work
   </span>
   <span> Code </span>
   </a>
-     | 
   <!-- demo -->
   <a href="https://www.youtube.com/watch?v=hGpkdz8-8vU"
    class="external-link dark-button is-normal is-rounded is-dark">
