@@ -33,21 +33,6 @@ category: work
   <a href="https://arxiv.org/abs/2204.06375"> [Paper]</a> |
   <a href="https://github.com/MB-29/greedy-identification"> [Code]</a> 
   </h5>
-
-  ---
--->
-  <h4 style="text-align: center">
-  FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems
-  </h4>
-  <h5 style="text-align: center">
-  Matthieu Blanke, Marc Lelarge
-  </h5>
-  <h6 style="text-align: center">
-  Inria Paris, DI ENS, PSL Research University
-  </h6>
-  
-  <!-- 
-  
   <h5 style="text-align: center">
   in
   <!-- <a href="https://icml.cc/Conferences/2023"> -->
@@ -58,8 +43,17 @@ category: work
   <a href="https://github.com/MB-29/exploration"> [Code]</a> |
   <a href="https://www.youtube.com/watch?v=hGpkdz8-8vU"> [Demo]</a>   
   </h5>
+  ---
 -->
-   
+  <h4 style="text-align: center">
+  FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems
+  </h4>
+  <h5 style="text-align: center">
+  Matthieu Blanke, Marc Lelarge
+  </h5>
+  <h6 style="text-align: center">
+  Inria Paris, DI ENS, PSL Research University
+  </h6>   
   <h5 style="text-align: center">
   in ICML 2023 | 
   <!-- paper -->
