@@ -519,6 +519,13 @@ code {
   display: flex;
   align-items: center;
 }
+.dark-button i {
+  margin-right: 8px;
+}
+
+.dark-button span {
+  font-weight: bold;
+}
 
 // Transitioning Themes
 html.transition,
