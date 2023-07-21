@@ -56,10 +56,27 @@ category: work
   <a href="https://www.youtube.com/watch?v=hGpkdz8-8vU"> [Demo]</a>   
   </h5>
   <h5 style="text-align: center">
+  <!-- paper -->
+  <a href="https://arxiv.org/abs/2304.13426"
+   class="external-link button is-normal is-rounded is-dark">
+  <span class="icon">
+  <i class="ai ai-arxiv"></i>
+  </span>
+  <span> Paper </span>
+  </a>
+  <!-- code -->
   <a href="https://github.com/MB-29/exploration"
    class="external-link button is-normal is-rounded is-dark">
   <span class="icon">
   <i class="fab fa-github"></i>
+  </span>
+  <span> Code </span>
+  </a>
+  <!-- demo -->
+  <a href="https://www.youtube.com/watch?v=hGpkdz8-8vU"
+   class="external-link button is-normal is-rounded is-dark">
+  <span class="icon">
+  <i class="fab fa-youtube"></i>
   </span>
   <span> Code </span>
   </a>
