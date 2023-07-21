@@ -2,7 +2,7 @@
 layout: page
 title: Interpretable meta-learning of physical systems
 description: Learning systems from various environments.
-img: /assets/img/meta_learning_dipole_field.png
+img: /assets/img/meta_learning/dipole_field.png
 importance: 1
 category: work
 ---
@@ -25,7 +25,7 @@ category: work
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/meta_learning_dipole_field.png" title="dipole_field" class="img-fluid rounded" %}
+        {% include figure.html path="assets/img/meta_learning/dipole_field.png" title="dipole_field" class="img-fluid rounded" %}
     </div>
 </div>
 
