@@ -67,7 +67,7 @@ category: work
      | 
   <!-- code -->
   <a href="https://github.com/MB-29/exploration"
-   class="external-link dark-button is-normal is-rounded is-dark">
+   class="external-link dark-button">
   <span class="icon">
   <i class="fab fa-github"></i>
   </span>
