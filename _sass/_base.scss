@@ -518,10 +518,11 @@ code {
   font-size: 18px;
   display: inline-flex;
   align-items: center;
+  border-radius: 20px;
 }
 .dark-button i {
   margin-right: 8px;
-  margin-left: -3px
+  margin-left: -3px;
 }
 
 .dark-button span {
