@@ -45,6 +45,7 @@ category: work
   <h6 style="text-align: center">
   Inria Paris, DI ENS, PSL Research University
   </h6>
+  <!-- 
   <h5 style="text-align: center">
   in
   <!-- <a href="https://icml.cc/Conferences/2023"> -->
@@ -55,7 +56,9 @@ category: work
   <a href="https://github.com/MB-29/exploration"> [Code]</a> |
   <a href="https://www.youtube.com/watch?v=hGpkdz8-8vU"> [Demo]</a>   
   </h5>
+  -->
   <h5 style="text-align: center">
+  In ICML 2023
   <!-- paper -->
   <a href="https://arxiv.org/abs/2304.13426"
    class="external-link button is-normal is-rounded is-dark">
@@ -66,7 +69,7 @@ category: work
   </a>
   <!-- code -->
   <a href="https://github.com/MB-29/exploration"
-   class="external-link button is-normal is-rounded is-dark">
+   class="external-link dark-button is-normal is-rounded is-dark">
   <span class="icon">
   <i class="fab fa-github"></i>
   </span>
@@ -74,11 +77,11 @@ category: work
   </a>
   <!-- demo -->
   <a href="https://www.youtube.com/watch?v=hGpkdz8-8vU"
-   class="external-link button is-normal is-rounded is-dark">
+   class="external-link dark-button is-normal is-rounded is-dark">
   <span class="icon">
   <i class="fab fa-youtube"></i>
   </span>
-  <span> Code </span>
+  <span> Demo </span>
   </a>
   </h5>
 
