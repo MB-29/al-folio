@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Exploration of physical systems.
-description: Searching for maximal information and efficiency.
+title: Adaptive exploration of physical systems
+description: A lightweight information maximization policy.
 img: /assets/img/publication_preview/pendulum_portrait.gif
 importance: 1
 category: work
@@ -15,7 +15,7 @@ category: work
 #### [Matthieu Blanke](https://mb-29.github.io/), [Marc Lelarge](https://www.di.ens.fr/~lelarge/) -->
 <!-- </div> -->
 
-<!-- --- -->
+<!-- 
 
   <h4 style="text-align: center">
   Online greedy identification of linear dynamical systems 
@@ -32,7 +32,7 @@ category: work
   </h5>
 
   ---
-
+-->
   <h4 style="text-align: center">
   FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems
   </h4>
