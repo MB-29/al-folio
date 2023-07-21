@@ -56,7 +56,7 @@ category: work
   <a href="https://github.com/MB-29/exploration"> [Code]</a> |
   <a href="https://www.youtube.com/watch?v=hGpkdz8-8vU"> [Demo]</a>   
   </h5>
-  -->
+   -->
   <h5 style="text-align: center">
   In ICML 2023
   <!-- paper -->
@@ -130,6 +130,19 @@ Exploration is a central question in reinforcement learning, as the agent needs 
 of the system can be costly:  consider for example an aircraft system, for which
 running experiments costs a lot of energy and time. In this regard, active exploration (or system identification) aims at exciting the system in order to collect informative data and learn the system globally in a sample-efficient manner, prior to any control task.
 Let us express the problem of exploration of a dynamical system in mathematical terms.
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{blanke2023flex,
+  title={FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems},
+  author={Blanke, Matthieu and Lelarge, Marc},
+  journal={Internationall Conference on Machine Learning, 2023},
+  year={2023}
+}
+</code></pre>
+  </div>
+</section>
 
 #### Controlled dynamical system
 In dynamical systems, the state $$x$$ and the input $$u$$ are governed by an equation of the form
