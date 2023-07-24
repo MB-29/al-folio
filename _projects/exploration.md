@@ -113,17 +113,6 @@ Abstract
 Model-based reinforcement learning is a powerful tool, but collecting data to fit an accurate model of the system can be costly. Exploring an unknown environment in a sample-efficient manner is hence of great importance. However, the complexity of dynamics and the computational limitations of real systems make this task challenging. In this work, we introduce FLEX, an exploration algorithm for nonlinear dynamics based on optimal experimental design. Our policy maximizes the information of the next step and results in an adaptive exploration algorithm, compatible with generic parametric learning models and requiring minimal resources. We test our method on a number of nonlinear environments covering different settings, including time-varying dynamics. Keeping in mind that exploration is intended to serve an exploitation objective, we also test our algorithm on downstream model-based classical control tasks and compare it to other state-of-the-art model-based and model-free approaches. The performance achieved by FLEX is competitive and its computational cost is low. 
 
 
-  <div class="container is-max-desktop content">
-    <pre><code>@article{blanke2023flex,
-  title={FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems},
-  author={Blanke, Matthieu and Lelarge, Marc},
-  journal={International Conference on Machine Learning, 2023},
-  year={2023}
-}
-</code></pre>
-  </div>
-
-
 <h3 style="text-align: center">
 Classical control environments
 </h3>
@@ -164,11 +153,30 @@ Quadrotor
 Time-varying dynamics
 </h3>
 
+FLEX is an adaptive policy, allowing the agent to accomodate to new observations at each time step. As a consequence, FLEX can track time-varying dynamics. 
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/exploration/time-varying.gif" title="time-varying" class="img-fluid rounded" %}
     </div>
 </div>
+
+<h3 style="text-align: center">
+Citation
+</h3>
+To cite this work, please use the following references.
+
+> Blanke, M., & Lelarge, M. (2023). FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems. International Conference on Machine Learning, 2023. 
+
+<div class="container is-max-desktop content">
+    <pre><code>@article{blanke2023flex,
+  title={FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems},
+  author={Blanke, Matthieu and Lelarge, Marc},
+  journal={International Conference on Machine Learning, 2023},
+  year={2023}
+}
+</code></pre>
+  </div>
 
 <h3 style="text-align: center">
 Exploration in reinforcement learning
