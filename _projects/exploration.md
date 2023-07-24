@@ -55,12 +55,11 @@ category: work
   Inria Paris, DI ENS, PSL Research University
   </h6>   
   <h5 style="text-align: center">
-  in ICML 2023 
   <!-- conference -->
   <a href="https://icml.cc/Conferences/2023/Dates"
    class="external-link dark-button">
   <span class="icon">
-  <i class="fa-solid fa-person-chalkboard"></i>
+  <i class="fa-solid fa-location-dot"></i>
   </span>
   <span>ICML2023</span>
   </a>
