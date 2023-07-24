@@ -1,6 +1,6 @@
 ---
 layout: page
-title: FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems
+title: Adaptive exploration of physical systems
 description:
 img: /assets/img/exploration/pendulum_trajectory.gif
 importance: 1
