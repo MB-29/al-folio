@@ -124,31 +124,7 @@ Model-based reinforcement learning is a powerful tool, but collecting data to fi
 </section>
 
 
-<h5 style="text-align: center">
-Exploration
-</h5>
 
-A sailor wants to explore the world aboard his boat. How should he choose his course in order to map the world as quickly as possible, based on what he observes along the way? This question sums up the problem of exploration, which arises in a similar way in the learning of physical systems, where the aim is to learn the dynamics of the system with as few experiments as possible.
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/exploration/magellan.jpg" title="magellan" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/exploration/map.jpg" title="map" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Brierly, O. W., iscovery of the Straits of Magellan in 1520, and Frederik De Wit’s 1654 Dutch Sea Atlas. Image courtesy of the Harvard Map Collection.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/exploration/pendulum_map.png" title="pendulum_map" class="img-fluid rounded " %}
-    </div>
-</div>
-<div class="caption">
-    The damped simple pendulum and its phase portrait. In our analogy, the ship is the pendulum, the captain is the reinforcement learning agent, the world to map is the pendulum's phase portrait and the rudder is the torque applied to the ship.
-</div>
 
 <h5 style="text-align: center">
 Results
@@ -183,6 +159,34 @@ Quadrotor
         {% include figure.html path="assets/img/exploration/quadrotor.gif" title="quadrotor" class="img-fluid rounded" %}
     </div>
 </div>
+
+
+<h5 style="text-align: center">
+Exploration
+</h5>
+
+A sailor wants to explore the world aboard his boat. How should he choose his course in order to map the world as quickly as possible, based on what he observes along the way? This question sums up the problem of exploration, which arises in a similar way in the learning of physical systems, where the aim is to learn the dynamics of the system with as few experiments as possible.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/exploration/magellan.jpg" title="magellan" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/exploration/map.jpg" title="map" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Brierly, O. W., iscovery of the Straits of Magellan in 1520, and Frederik De Wit’s 1654 Dutch Sea Atlas. Image courtesy of the Harvard Map Collection.
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/exploration/pendulum_map.png" title="pendulum_map" class="img-fluid rounded " %}
+    </div>
+</div>
+<div class="caption">
+    The damped simple pendulum and its phase portrait. In our analogy, the ship is the pendulum, the captain is the reinforcement learning agent, the world to map is the pendulum's phase portrait and the rudder is the torque applied to the ship.
+</div>
+
 ## Exploring an unknown environment
 Exploration is a central question in reinforcement learning, as the agent needs to learn about the environment before solving a control task. Even though prior theoretical knowledge might provide a model of the system, the model must always be adjusted with experimental data to be as faithful to reality as possible. Collecting observations to fit an accurate model
 of the system can be costly:  consider for example an aircraft system, for which
