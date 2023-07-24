@@ -62,7 +62,7 @@ category: work
   <a href="https://icml.cc/Conferences/2023/Dates"
    class="external-link dark-button">
   <span class="icon">
-  <i class="fa-solid fa-location-dot"></i>
+  <i class="fab fa-location-dot"></i>
   </span>
   <span>ICML2023</span>
   </a>
