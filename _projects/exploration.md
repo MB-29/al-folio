@@ -56,7 +56,7 @@ category: work
   </h6>   
   <h5 style="text-align: center">
     
-  <br></br>
+  <br>
   
   <!-- conference -->
   <a href="https://icml.cc/Conferences/2023/Dates"
