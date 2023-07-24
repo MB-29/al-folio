@@ -165,6 +165,12 @@ Quadrotor
 Time-varying dynamics
 </h3>
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/exploration/time-varying.gif" title="time-varying" class="img-fluid rounded" %}
+    </div>
+</div>
+
 <h3 style="text-align: center">
 Exploration in reinforcement learning
 </h3>
