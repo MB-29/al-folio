@@ -105,14 +105,13 @@ category: work
     </div>
 </div>
 
-<h5 style="text-align: center">
+<h3 style="text-align: center">
 Abstract
-</h5>
+</h3>
 
 Model-based reinforcement learning is a powerful tool, but collecting data to fit an accurate model of the system can be costly. Exploring an unknown environment in a sample-efficient manner is hence of great importance. However, the complexity of dynamics and the computational limitations of real systems make this task challenging. In this work, we introduce FLEX, an exploration algorithm for nonlinear dynamics based on optimal experimental design. Our policy maximizes the information of the next step and results in an adaptive exploration algorithm, compatible with generic parametric learning models and requiring minimal resources. We test our method on a number of nonlinear environments covering different settings, including time-varying dynamics. Keeping in mind that exploration is intended to serve an exploitation objective, we also test our algorithm on downstream model-based classical control tasks and compare it to other state-of-the-art model-based and model-free approaches. The performance achieved by FLEX is competitive and its computational cost is low. 
 
 
-<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h5 class="title">BibTeX</h5>
     <pre><code>@article{blanke2023flex,
@@ -123,14 +122,11 @@ Model-based reinforcement learning is a powerful tool, but collecting data to fi
 }
 </code></pre>
   </div>
-</section>
 
 
-
-
-<h5 style="text-align: center">
-Results
-</h5>
+<h3 style="text-align: center">
+Classical control environments
+</h3>
 
 <h6 style="text-align: center">
 Pendulum
@@ -163,9 +159,13 @@ Quadrotor
 </div>
 
 
-<h5 style="text-align: center">
-Exploration
-</h5>
+<h3 style="text-align: center">
+Time-varying dynamics
+</h3>
+
+<h3 style="text-align: center">
+Exploration in reinforcement learning
+</h3>
 
 A sailor wants to explore the world aboard his boat. How should he choose his course in order to map the world as quickly as possible, based on what he observes along the way? This question sums up the problem of exploration, which arises in a similar way in the learning of physical systems, where the aim is to learn the dynamics of the system with as few experiments as possible.
 
@@ -188,10 +188,4 @@ A sailor wants to explore the world aboard his boat. How should he choose his co
 <div class="caption">
     The damped simple pendulum and its phase portrait. In our analogy, the ship is the pendulum, the captain is the reinforcement learning agent, the world to map is the pendulum's phase portrait and the rudder is the torque applied to the ship.
 </div>
-
-## Exploring an unknown environment
-Exploration is a central question in reinforcement learning, as the agent needs to learn about the environment before solving a control task. Even though prior theoretical knowledge might provide a model of the system, the model must always be adjusted with experimental data to be as faithful to reality as possible. Collecting observations to fit an accurate model
-of the system can be costly:  consider for example an aircraft system, for which
-running experiments costs a lot of energy and time. In this regard, active exploration (or system identification) aims at exciting the system in order to collect informative data and learn the system globally in a sample-efficient manner, prior to any control task.
-
 
