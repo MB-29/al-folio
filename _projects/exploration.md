@@ -177,7 +177,8 @@ To cite this work, please use the following references.
 }
 </code></pre>
   </div>
-
+  
+<--
 <h3 style="text-align: center">
 Exploration in reinforcement learning
 </h3>
@@ -203,4 +204,4 @@ A sailor wants to explore the world aboard his boat. How should he choose his co
 <div class="caption">
     The damped simple pendulum and its phase portrait. In our analogy, the ship is the pendulum, the captain is the reinforcement learning agent, the world to map is the pendulum's phase portrait and the rudder is the torque applied to the ship.
 </div>
-
+-->
