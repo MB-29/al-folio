@@ -59,7 +59,7 @@ category: work
   <br>
   
   <!-- conference -->
-  <a href="https://icml.cc/Conferences/2023/Dates"
+  <a href="https://icml.cc/virtual/2023/poster/25133"
    class="external-link dark-button">
   <span class="icon">
   <i class="fas fa-chalkboard-teacher"></i>
