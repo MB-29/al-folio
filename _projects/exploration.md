@@ -1,12 +1,11 @@
 ---
 layout: page
-title: Adaptive exploration of physical systems
-description: A lightweight information maximization policy.
+title: FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems
+description:
 img: /assets/img/exploration/pendulum_trajectory.gif
 importance: 1
 category: work
 ---
-<!-- <div style="text-align: center"> -->
 
 <!-- #### Online greedy identification of linear dynamical systems, in [CDC2022](https://cdc2022.ieeecss.org/) | [[Paper]](https://arxiv.org/abs/2204.06375) | [[Code]](https://github.com/MB-29/greedy-identification) 
 
