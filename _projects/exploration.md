@@ -178,8 +178,8 @@ To cite this work, please use the following references.
 </code></pre>
   </div>
   
-<!-- <h3 style="text-align: center">
-Exploration in reinforcement learning
+<h3 style="text-align: center">
+A parallel with the historical meaning of exploration
 </h3>
 
 A sailor wants to explore the world aboard his boat. How should he choose his course in order to map the world as quickly as possible, based on what he observes along the way? This question sums up the problem of exploration, which arises in a similar way in the learning of physical systems, where the aim is to learn the dynamics of the system with as few experiments as possible.
