@@ -92,6 +92,8 @@ category: work
   </a>
   </h5>
 
+  <br>
+
 <!-- --- -->
 
   <!-- <h5 style="text-align: center">
@@ -113,7 +115,6 @@ Model-based reinforcement learning is a powerful tool, but collecting data to fi
 
 
   <div class="container is-max-desktop content">
-    <h5 class="title">BibTeX</h5>
     <pre><code>@article{blanke2023flex,
   title={FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems},
   author={Blanke, Matthieu and Lelarge, Marc},
@@ -127,6 +128,8 @@ Model-based reinforcement learning is a powerful tool, but collecting data to fi
 <h3 style="text-align: center">
 Classical control environments
 </h3>
+
+We compare FLEX with baselines on a number of classical control nonlinear environments.
 
 <h6 style="text-align: center">
 Pendulum
