@@ -178,7 +178,7 @@ To cite this work, please use the following references.
 </code></pre>
   </div>
   
-<--
+<!--
 <h3 style="text-align: center">
 Exploration in reinforcement learning
 </h3>
