@@ -131,9 +131,9 @@ Classical control environments
 
 We compare FLEX with baselines on a number of classical control nonlinear environments.
 
-<h6 style="text-align: center">
+<h5 style="text-align: center">
 Pendulum
-</h6>
+</h5>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -141,9 +141,9 @@ Pendulum
     </div>
 </div>
 
-<h6 style="text-align: center">
+<h5 style="text-align: center">
 Cartpole
-</h6>
+</h5>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -151,16 +151,15 @@ Cartpole
     </div>
 </div>
 
-<h6 style="text-align: center">
+<h5 style="text-align: center">
 Quadrotor
-</h6>
+</h5>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/exploration/quadrotor.gif" title="quadrotor" class="img-fluid rounded" %}
     </div>
 </div>
-
 
 <h3 style="text-align: center">
 Time-varying dynamics
