@@ -166,13 +166,13 @@ Citation
 </h3>
 To cite this work, please use the following references.
 
-> Blanke, M., & Lelarge, M. (2023). FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems. International Conference on Machine Learning, 2023. 
+> Blanke, M., & Lelarge, M. (2023). FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems. International Conference on Machine Learning. 
 
 <div class="container is-max-desktop content">
     <pre><code>@article{blanke2023flex,
   title={FLEX: an Adaptive Exploration Algorithm for Nonlinear Systems},
   author={Blanke, Matthieu and Lelarge, Marc},
-  journal={International Conference on Machine Learning, 2023},
+  journal={International Conference on Machine Learning},
   year={2023}
 }
 </code></pre>
