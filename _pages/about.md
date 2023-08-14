@@ -17,6 +17,6 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 I am a PhD student at Inria Paris, in the [DYOGENE team](https://www.di.ens.fr/dyogene/) and at [DI ENS PARIS](https://www.di.ens.fr/).
-I am working under the supervision of [Marc Lelarge](https://www.di.ens.fr/~lelarge/).
+I am working under the supervision of [Marc Lelarge](https://www.di.ens.fr/~lelarge/) on machine learning and physical systems.
 
 You can find more information about my curriculum [here](https://www.linkedin.com/in/{{ site.linkedin_username }}).
