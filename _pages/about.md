@@ -16,7 +16,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a PhD student in the Inria Paris [Argo team](https://argo-project-team.github.io/) and in [DI ENS](https://www.di.ens.fr/).
+I am a PhD student in the [Argo team](https://argo-project-team.github.io/) at Inria Paris and in [DI ENS](https://www.di.ens.fr/).
 I am working under the supervision of [Marc Lelarge](https://www.di.ens.fr/~lelarge/) on machine learning for physical systems.
 
 You can find more information about my curriculum [here](https://www.linkedin.com/in/{{ site.linkedin_username }}).
