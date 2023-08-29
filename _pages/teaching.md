@@ -7,7 +7,7 @@ nav: true
 ---
 
 **Autumn 2023**
-Teaching assistant for courses Differential Equations and Probability Theory, L3 at Mines de Paris PSL.
+Teaching assistant for courses Differential Equations and Probability Theory, L3 at Mines Paris PSL.
 
 **Winter 2023**
 Teaching assistant for course Physique numérique, L3 at Université Paris Cité.
