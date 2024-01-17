@@ -7,16 +7,17 @@ nav: true
 ---
 
 **Autumn 2023**
-Teaching assistant for courses Differential Equations and Probability Theory, L3 at Mines Paris PSL.
+Teaching assistant, Differential Equations, L3 at Mines Paris PSL.
+Teaching assistant, Probability Theory, L3 at Mines Paris PSL.
 
 **Winter 2023**
-Teaching assistant for course Physique numérique, L3 at Université Paris Cité.
+Teaching assistant, Numerical Physics, L3 at Université Paris Cité.
 
 **Autumn 2022**
-Teaching assistant for course Statistiques, L3 at Université Paris 1 Panthéon-Sorbonne, École d'économie de la Sorbonne.
+Teaching assistant, Statistics, L3 at Université Paris 1 Panthéon-Sorbonne, École d'économie de la Sorbonne.
 
 **Winter 2022**
-Teaching assistant for course Physique numérique, L3 at Université Paris Cité.
+Teaching assistant, Numerical Physics, L3 at Université Paris Cité.
 
 **Autumn 2021**
-Teaching assistant for course Statistiques, L3 at Université Paris 1 Panthéon-Sorbonne, École d'économie de la Sorbonne.
+Teaching assistant, Statistics, L3 at Université Paris 1 Panthéon-Sorbonne, École d'économie de la Sorbonne.
