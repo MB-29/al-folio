@@ -19,4 +19,4 @@ social: true  # includes social icons at the bottom of the page
 I am a PhD candidate in the [Argo team](https://www.di.ens.fr/argo) at Inria Paris and in [DI ENS](https://www.di.ens.fr/).
 I am working under the supervision of [Marc Lelarge](https://www.di.ens.fr/~lelarge/) on machine learning for physical systems.
 
-You can find more information about me [on my resume](assets/pdf/resume.pdf).
+You can find more information about me on [my resume](assets/pdf/resume.pdf).
