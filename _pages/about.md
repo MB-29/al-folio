@@ -16,7 +16,6 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a PhD candidate in the [Argo team](https://www.di.ens.fr/argo) at Inria Paris and in [DI ENS](https://www.di.ens.fr/).
-I am working under the supervision of [Marc Lelarge](https://www.di.ens.fr/~lelarge/) on deep learning for physical systems.
+I am a Postdoctoral Associate in the [Department of Mathematics](https://math.nyu.edu/) at the [Courant Institute for Mathematical Sciences](https://cims.nyu.edu/dynamic/). I am currenlty working with [Sara Shamekh](https://sshamekh.com/) and [Pierre Gentine](https://www.eee.columbia.edu/faculty/pierre-gentine) on deep learning approaches for parameterization of planetary boundary layer turbulence and low clouds in climate models.
 
 You can find more information about me on [my resume](assets/pdf/resume.pdf).
