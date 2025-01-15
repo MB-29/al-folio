@@ -12,7 +12,7 @@
   Matthieu Blanke's webpage
 
 
-  | blog
+  | a post with code
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/blog/2015/code/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -135,8 +135,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/projects/">
                 projects
@@ -169,8 +167,8 @@
           
           
           
-            <div class = "toggle-container">
-              <a id = "light-toggle">
+            <div class="toggle-container">
+              <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
               </a>
@@ -187,58 +185,48 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">a post with code</h1>
+    <p class="post-meta">July 15, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>This theme implements a built-in Jekyll feature, the use of Rouge, for syntax highlighting.
+It supports more than 100 languages.
+This example is in C++.
+All you have to do is wrap your code in a liquid tag:</p>
+
+<p>{% highlight c++ linenos %}  <br> code code code <br> {% endhighlight %}</p>
+
+<p>The keyword <code>linenos</code> triggers display of line numbers.
+Produces something like this:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">int main(int argc, char const \*argv[])
+{
+    string myString;
+
+    cout &lt;&lt; "input a string: ";
+    getline(cin, myString);
+    int length = myString.length();
+
+    char charArray = new char * [length];
+
+    charArray = myString;
+    for(int i = 0; i &lt; length; ++i){
+        cout &lt;&lt; charArray[i] &lt;&lt; " ";
+    }
+
+    return 0;
+}</code></pre></figure>
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/diagrams/">a post with diagrams</a></h3>
-        <p class="post-meta">July 4, 2021</p>
-        <p>an example of a blog post with diagrams</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">May 22, 2021</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-  </ul>
+  </article>
 
   
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
 
 </div>
 
@@ -249,8 +237,8 @@
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2025 Matthieu  Blanke.
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+    © Copyright 2025 Matthieu  Blanke.
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
 
     
     
